@@ -8,10 +8,12 @@ Exemplo de Projeto utilizando ANTLR para a turma da disciplina de compiladores n
      > pip install antlr4-python3-runtime
 
 2 - Crie um arquivo de descrição de linguagem:
+
     Extensão g4 este arquivo deve possuir o mesmo nome da linguagem;
 
 3 - Executar o ANTLR
-    java -jar antlr.jar -Dlanguage=Python3 Expressoes.g4
+
+    ```java -jar antlr.jar -Dlanguage=Python3 Expressoes.g4```
 
 4 - Executar o analisador:
 ```

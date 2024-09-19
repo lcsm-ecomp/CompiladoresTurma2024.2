@@ -26,14 +26,5 @@ class ExpressoesListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by ExpressoesParser#com.
-    def enterCom(self, ctx:ExpressoesParser.ComContext):
-        pass
-
-    # Exit a parse tree produced by ExpressoesParser#com.
-    def exitCom(self, ctx:ExpressoesParser.ComContext):
-        pass
-
-
 
 del ExpressoesParser
