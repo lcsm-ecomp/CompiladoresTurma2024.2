@@ -36,9 +36,22 @@ def geraCodigoprefix(exp):
         return exp.VAR().getText()
 
 vars = {
-    'x' : 3,
+    'x' : 2,
     'y' : 4
 }
+def executeCom(com):
+    if com.PRINT():
+        print(avalieExp(com.exp()))
+    elif com.VAR():
+        nomeVar = com.VAR().getText()
+        valor = avalieExp(com.exp())
+        vars[nomeVar] = valor
+    elif com.ACHAVE():
+        for c in com.com():
+            executeCom(c)
+    else:
+        raise Exception("Nao sei executar o comando" + com.toStringTree(recog=parser))
+
 def avalieExp(exp):
     if exp.NUM():
         return int(exp.getText())
@@ -52,14 +65,28 @@ def avalieExp(exp):
             return v1-v2
         elif op=='*':
             return v1*v2
-        else:
+        elif op=='/':
             return v1/v2
+        elif op=='==':
+            return v1==v2
+        elif op=='!=':
+            return v1!=v2
+        elif op=='>':
+            return v1>v2
+        elif op=='<':
+            return v1<v2
+        else:
+            return None
     elif exp.VAR():
         nome = exp.VAR().getText()
         if nome in vars.keys():
            return vars[nome]
         else:
            raise Exception('variavel ' + nome + ' não declarada')
+    elif exp.APAR():
+        return avalieExp(exp.exp(0))
+    else:
+        raise Exception("Nao sei avaliar expressao" + exp.toStringTree(recog=parser))
 
 
 def imprime(no, indent):
@@ -67,14 +94,26 @@ def imprime(no, indent):
     for pos in range(no.getChildCount()):
         imprime(no.getChild(pos), indent + "+-- ")
 
-input_stream = FileStream(sys.argv[1])
+
+#input_stream = FileStream(sys.argv[1])
+input_stream = InputStream(
+    """
+     {
+        print(x) ;
+        x = x + 1 ;
+        print(x);
+        print(x>0); 
+     } 
+    """)
 lexer = ExpressoesLexer(input_stream)
 stream = CommonTokenStream(lexer)
 parser = ExpressoesParser(stream)
 tree = parser.prog()
-if parser.getNumberOfSyntaxErrors()==0:
-    print("ok")
-    print(tree.toStringTree(recog=parser))
-    exp=tree.exp()
-else:
+if parser.getNumberOfSyntaxErrors()>0:
     print("erro sintático")
+    sys.exit(1)
+
+print("ok")
+com=tree.com()
+print(com.toStringTree(recog=parser))
+print('valor = ', executeCom(com))
