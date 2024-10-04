@@ -2,8 +2,10 @@ grammar Expressoes;
 
 // Analise Lexica
 PRINT : 'print' ;
+IF : 'if' ;
+ELSE : 'else';
 PV : ';' ;
-VAR : [a-z] ;
+VAR : [A-Za-z]+ ;
 NUM : [0-9]+ ;
 EQ : '=';
 OP1 : '==' | '!=' | '<' | '>' ;
@@ -20,6 +22,7 @@ prog : com EOF ;
 com : PRINT exp PV 
     | VAR EQ exp PV
     | ACHAVE com* FCHAVE
+    | IF APAR exp FPAR com ELSE com
     ; 
 exp : exp op=OP3 exp
     | exp op=OP2 exp 

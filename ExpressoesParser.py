@@ -10,23 +10,25 @@ else:
 
 def serializedATN():
     return [
-        4,1,13,52,2,0,7,0,2,1,7,1,2,2,7,2,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,
-        1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,21,8,1,10,1,12,1,24,9,1,1,1,3,1,27,
-        8,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,36,8,2,1,2,1,2,1,2,1,2,1,2,1,
-        2,1,2,1,2,1,2,5,2,47,8,2,10,2,12,2,50,9,2,1,2,0,1,4,3,0,2,4,0,0,
-        56,0,6,1,0,0,0,2,26,1,0,0,0,4,35,1,0,0,0,6,7,3,2,1,0,7,8,5,0,0,1,
-        8,1,1,0,0,0,9,10,5,1,0,0,10,11,3,4,2,0,11,12,5,2,0,0,12,27,1,0,0,
-        0,13,14,5,3,0,0,14,15,5,5,0,0,15,16,3,4,2,0,16,17,5,2,0,0,17,27,
-        1,0,0,0,18,22,5,11,0,0,19,21,3,2,1,0,20,19,1,0,0,0,21,24,1,0,0,0,
-        22,20,1,0,0,0,22,23,1,0,0,0,23,25,1,0,0,0,24,22,1,0,0,0,25,27,5,
-        12,0,0,26,9,1,0,0,0,26,13,1,0,0,0,26,18,1,0,0,0,27,3,1,0,0,0,28,
-        29,6,2,-1,0,29,36,5,4,0,0,30,36,5,3,0,0,31,32,5,9,0,0,32,33,3,4,
-        2,0,33,34,5,10,0,0,34,36,1,0,0,0,35,28,1,0,0,0,35,30,1,0,0,0,35,
-        31,1,0,0,0,36,48,1,0,0,0,37,38,10,6,0,0,38,39,5,8,0,0,39,47,3,4,
-        2,7,40,41,10,5,0,0,41,42,5,7,0,0,42,47,3,4,2,6,43,44,10,4,0,0,44,
-        45,5,6,0,0,45,47,3,4,2,5,46,37,1,0,0,0,46,40,1,0,0,0,46,43,1,0,0,
-        0,47,50,1,0,0,0,48,46,1,0,0,0,48,49,1,0,0,0,49,5,1,0,0,0,50,48,1,
-        0,0,0,5,22,26,35,46,48
+        4,1,15,60,2,0,7,0,2,1,7,1,2,2,7,2,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,21,8,1,10,1,12,1,24,9,1,1,1,1,1,1,
+        1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,35,8,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
+        3,2,44,8,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,5,2,55,8,2,10,2,12,
+        2,58,9,2,1,2,0,1,4,3,0,2,4,0,0,65,0,6,1,0,0,0,2,34,1,0,0,0,4,43,
+        1,0,0,0,6,7,3,2,1,0,7,8,5,0,0,1,8,1,1,0,0,0,9,10,5,1,0,0,10,11,3,
+        4,2,0,11,12,5,4,0,0,12,35,1,0,0,0,13,14,5,5,0,0,14,15,5,7,0,0,15,
+        16,3,4,2,0,16,17,5,4,0,0,17,35,1,0,0,0,18,22,5,13,0,0,19,21,3,2,
+        1,0,20,19,1,0,0,0,21,24,1,0,0,0,22,20,1,0,0,0,22,23,1,0,0,0,23,25,
+        1,0,0,0,24,22,1,0,0,0,25,35,5,14,0,0,26,27,5,2,0,0,27,28,5,11,0,
+        0,28,29,3,4,2,0,29,30,5,12,0,0,30,31,3,2,1,0,31,32,5,3,0,0,32,33,
+        3,2,1,0,33,35,1,0,0,0,34,9,1,0,0,0,34,13,1,0,0,0,34,18,1,0,0,0,34,
+        26,1,0,0,0,35,3,1,0,0,0,36,37,6,2,-1,0,37,44,5,6,0,0,38,44,5,5,0,
+        0,39,40,5,11,0,0,40,41,3,4,2,0,41,42,5,12,0,0,42,44,1,0,0,0,43,36,
+        1,0,0,0,43,38,1,0,0,0,43,39,1,0,0,0,44,56,1,0,0,0,45,46,10,6,0,0,
+        46,47,5,10,0,0,47,55,3,4,2,7,48,49,10,5,0,0,49,50,5,9,0,0,50,55,
+        3,4,2,6,51,52,10,4,0,0,52,53,5,8,0,0,53,55,3,4,2,5,54,45,1,0,0,0,
+        54,48,1,0,0,0,54,51,1,0,0,0,55,58,1,0,0,0,56,54,1,0,0,0,56,57,1,
+        0,0,0,57,5,1,0,0,0,58,56,1,0,0,0,5,22,34,43,54,56
     ]
 
 class ExpressoesParser ( Parser ):
@@ -39,13 +41,13 @@ class ExpressoesParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'print'", "';'", "<INVALID>", "<INVALID>", 
-                     "'='", "<INVALID>", "<INVALID>", "<INVALID>", "'('", 
-                     "')'", "'{'", "'}'" ]
+    literalNames = [ "<INVALID>", "'print'", "'if'", "'else'", "';'", "<INVALID>", 
+                     "<INVALID>", "'='", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "'('", "')'", "'{'", "'}'" ]
 
-    symbolicNames = [ "<INVALID>", "PRINT", "PV", "VAR", "NUM", "EQ", "OP1", 
-                      "OP2", "OP3", "APAR", "FPAR", "ACHAVE", "FCHAVE", 
-                      "BRANCO" ]
+    symbolicNames = [ "<INVALID>", "PRINT", "IF", "ELSE", "PV", "VAR", "NUM", 
+                      "EQ", "OP1", "OP2", "OP3", "APAR", "FPAR", "ACHAVE", 
+                      "FCHAVE", "BRANCO" ]
 
     RULE_prog = 0
     RULE_com = 1
@@ -55,18 +57,20 @@ class ExpressoesParser ( Parser ):
 
     EOF = Token.EOF
     PRINT=1
-    PV=2
-    VAR=3
-    NUM=4
-    EQ=5
-    OP1=6
-    OP2=7
-    OP3=8
-    APAR=9
-    FPAR=10
-    ACHAVE=11
-    FCHAVE=12
-    BRANCO=13
+    IF=2
+    ELSE=3
+    PV=4
+    VAR=5
+    NUM=6
+    EQ=7
+    OP1=8
+    OP2=9
+    OP3=10
+    APAR=11
+    FPAR=12
+    ACHAVE=13
+    FCHAVE=14
+    BRANCO=15
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -160,6 +164,18 @@ class ExpressoesParser ( Parser ):
                 return self.getTypedRuleContext(ExpressoesParser.ComContext,i)
 
 
+        def IF(self):
+            return self.getToken(ExpressoesParser.IF, 0)
+
+        def APAR(self):
+            return self.getToken(ExpressoesParser.APAR, 0)
+
+        def FPAR(self):
+            return self.getToken(ExpressoesParser.FPAR, 0)
+
+        def ELSE(self):
+            return self.getToken(ExpressoesParser.ELSE, 0)
+
         def getRuleIndex(self):
             return ExpressoesParser.RULE_com
 
@@ -180,7 +196,7 @@ class ExpressoesParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_com)
         self._la = 0 # Token type
         try:
-            self.state = 26
+            self.state = 34
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [1]:
@@ -192,7 +208,7 @@ class ExpressoesParser ( Parser ):
                 self.state = 11
                 self.match(ExpressoesParser.PV)
                 pass
-            elif token in [3]:
+            elif token in [5]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 13
                 self.match(ExpressoesParser.VAR)
@@ -203,14 +219,14 @@ class ExpressoesParser ( Parser ):
                 self.state = 16
                 self.match(ExpressoesParser.PV)
                 pass
-            elif token in [11]:
+            elif token in [13]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 18
                 self.match(ExpressoesParser.ACHAVE)
                 self.state = 22
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while (((_la) & ~0x3f) == 0 and ((1 << _la) & 2058) != 0):
+                while (((_la) & ~0x3f) == 0 and ((1 << _la) & 8230) != 0):
                     self.state = 19
                     self.com()
                     self.state = 24
@@ -219,6 +235,23 @@ class ExpressoesParser ( Parser ):
 
                 self.state = 25
                 self.match(ExpressoesParser.FCHAVE)
+                pass
+            elif token in [2]:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 26
+                self.match(ExpressoesParser.IF)
+                self.state = 27
+                self.match(ExpressoesParser.APAR)
+                self.state = 28
+                self.exp(0)
+                self.state = 29
+                self.match(ExpressoesParser.FPAR)
+                self.state = 30
+                self.com()
+                self.state = 31
+                self.match(ExpressoesParser.ELSE)
+                self.state = 32
+                self.com()
                 pass
             else:
                 raise NoViableAltException(self)
@@ -290,30 +323,30 @@ class ExpressoesParser ( Parser ):
         self.enterRecursionRule(localctx, 4, self.RULE_exp, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 35
+            self.state = 43
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [4]:
-                self.state = 29
+            if token in [6]:
+                self.state = 37
                 self.match(ExpressoesParser.NUM)
                 pass
-            elif token in [3]:
-                self.state = 30
+            elif token in [5]:
+                self.state = 38
                 self.match(ExpressoesParser.VAR)
                 pass
-            elif token in [9]:
-                self.state = 31
+            elif token in [11]:
+                self.state = 39
                 self.match(ExpressoesParser.APAR)
-                self.state = 32
+                self.state = 40
                 self.exp(0)
-                self.state = 33
+                self.state = 41
                 self.match(ExpressoesParser.FPAR)
                 pass
             else:
                 raise NoViableAltException(self)
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 48
+            self.state = 56
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -321,50 +354,50 @@ class ExpressoesParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 46
+                    self.state = 54
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
                     if la_ == 1:
                         localctx = ExpressoesParser.ExpContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_exp)
-                        self.state = 37
+                        self.state = 45
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
-                        self.state = 38
+                        self.state = 46
                         localctx.op = self.match(ExpressoesParser.OP3)
-                        self.state = 39
+                        self.state = 47
                         self.exp(7)
                         pass
 
                     elif la_ == 2:
                         localctx = ExpressoesParser.ExpContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_exp)
-                        self.state = 40
+                        self.state = 48
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
-                        self.state = 41
+                        self.state = 49
                         localctx.op = self.match(ExpressoesParser.OP2)
-                        self.state = 42
+                        self.state = 50
                         self.exp(6)
                         pass
 
                     elif la_ == 3:
                         localctx = ExpressoesParser.ExpContext(self, _parentctx, _parentState)
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_exp)
-                        self.state = 43
+                        self.state = 51
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 44
+                        self.state = 52
                         localctx.op = self.match(ExpressoesParser.OP1)
-                        self.state = 45
+                        self.state = 53
                         self.exp(5)
                         pass
 
              
-                self.state = 50
+                self.state = 58
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
 

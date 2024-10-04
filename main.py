@@ -49,6 +49,12 @@ def executeCom(com):
     elif com.ACHAVE():
         for c in com.com():
             executeCom(c)
+    elif com.IF():
+        valor = avalieExp(com.exp())
+        if valor==True or valor!=0:
+            executeCom(com.com(0))
+        else:
+            executeCom(com.com(1))
     else:
         raise Exception("Nao sei executar o comando" + com.toStringTree(recog=parser))
 
@@ -87,23 +93,39 @@ def avalieExp(exp):
         return avalieExp(exp.exp(0))
     else:
         raise Exception("Nao sei avaliar expressao" + exp.toStringTree(recog=parser))
-
-
 def imprime(no, indent):
     print(indent + no.getText())
     for pos in range(no.getChildCount()):
         imprime(no.getChild(pos), indent + "+-- ")
 
+incrIndent = "    "
+def embelezeCom(com,indent=" "):
+    if com.PRINT():
+        print(indent , "print exp ;")
+    elif com.VAR():
+        nomeVar = com.VAR().getText()
+        print(indent,nomeVar, " = exp ;")
+    elif com.ACHAVE():
+        print(indent,"{")
+        for c in com.com():
+            embelezeCom(c,indent+incrIndent)
+        print(indent,"}")
+    elif com.IF():
+        print(indent, "if (exp)")
+        embelezeCom(com.com(0),indent+incrIndent)
+        print(indent,"else")
+        embelezeCom(com.com(1),indent+incrIndent)
+
+    else:
+        raise Exception("Nao sei executar o comando" + com.toStringTree(recog=parser))
+
+
+
 
 #input_stream = FileStream(sys.argv[1])
 input_stream = InputStream(
-    """
-     {
-        print(x) ;
-        x = x + 1 ;
-        print(x);
-        print(x>0); 
-     } 
+    """{x = 2 ; print(x);if (x > 1)print 1; else
+       print 0; x = x * 5 ; print(x>0); print(x);} 
     """)
 lexer = ExpressoesLexer(input_stream)
 stream = CommonTokenStream(lexer)
@@ -115,5 +137,6 @@ if parser.getNumberOfSyntaxErrors()>0:
 
 print("ok")
 com=tree.com()
-print(com.toStringTree(recog=parser))
-print('valor = ', executeCom(com))
+#print(com.toStringTree(recog=parser))
+#print('valor = ', executeCom(com))
+embelezeCom(com)
